@@ -1,11 +1,15 @@
-
+import { Fragment } from "react";
 import Header from "./components/Layout/Header";
+import Clothes from "./components/Clothes/Clothes";
 
 function App() {
   return (
-    <div>
+    <Fragment>
     <Header />
-    </div>
+    <main>
+    <Clothes />
+    </main>
+    </Fragment>
   );
 }
 
