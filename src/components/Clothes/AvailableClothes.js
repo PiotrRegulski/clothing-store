@@ -8,7 +8,7 @@ const DUMMY_CLOTHES = [
     name: "T-shirt",
     description: "Przewiewny i czarny",
     price: 22.99,
-    img:shirtImage
+    img: shirtImage,
   },
   {
     id: "m2",
@@ -33,13 +33,13 @@ const DUMMY_CLOTHES = [
 const AvailableClothes = () => {
   const clothesList = DUMMY_CLOTHES.map((cloth) => (
     <ClothesItem
+      id ={cloth.id}
       key={cloth.id}
       nameCloth={cloth.name}
       description={cloth.description}
       price={cloth.price}
-     
       Image={cloth.img}
-      textAlt={"T-shirt"}
+      textAlt={cloth.name}
     />
   ));
   return (

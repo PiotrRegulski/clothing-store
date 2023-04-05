@@ -10,8 +10,10 @@
     margin: 0 0 0.25rem 0;
   }
   .cloth img {
-    justify-items: right;
-    border: 1px solid orange
+    display: flex;
+    justify-content: left;
+    align-items: left;
+   
   }
   
   .description {
